@@ -1,0 +1,38 @@
+body,html{
+    font-family: 'Lato', sans-serif;
+}
+#header{
+    width: 100%;
+    background-color: transparent;
+}
+#header .navbar-collapse{
+    width: auto;
+    justify-content: center;
+    
+}
+   
+#header .nav-link:hover{
+    border-bottom: solid 4px var(--secondary);
+    color: var(--secondary);
+}
+
+#header.nav-link{
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-bottom: 4px transparent;
+}
+
+.multi-collapse{
+    border-bottom: solid 4px var(--primary);
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-bottom: 4px transparent;
+}
+

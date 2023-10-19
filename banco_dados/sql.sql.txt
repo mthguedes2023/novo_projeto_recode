@@ -1,0 +1,36 @@
+CREATE DATABASE agencia_viagem;
+USE agencia_viagem;
+CREATE TABLE Usuarios (
+    id_usuarios INT AUTO_INCREMENT PRIMARY KEY,
+    cpf INT,
+    email VARCHAR(80),
+    nome_usuario VARCHAR(80)
+);
+
+CREATE TABLE Pacotes (
+    id_pacote INT AUTO_INCREMENT PRIMARY KEY,
+    preco_pacote FLOAT,
+    nome_pacote VARCHAR(80),
+    quantidade_pacote INT
+);
+
+CREATE TABLE Compras (
+    id_compra INT AUTO_INCREMENT PRIMARY KEY,
+    fk_Pacotes_id_pacote INT,
+    data_compra VARCHAR(20),
+    opcao_pagamento VARCHAR(8),
+    total_compra FLOAT,
+    FOREIGN KEY (fk_Pacotes_id_pacote) REFERENCES Pacotes (id_pacote) ON DELETE SET NULL
+);
+
+ALTER TABLE `agencia_viagem`.`usuarios` 
+CHANGE COLUMN `cpf` `cpf` VARCHAR(15) NULL DEFAULT NULL ;
+
+
+vou ter que sair  valeu me ajuDOU MUITO
+so falta vc replicar o CRUD no pacote crud
+e mudar as Classes de acordo com os campos que pede
+
+ta valeu mesmo imagina
+boa noite tbm
+me ajudou muito tamo hhehehehehe fuiiii valeu
